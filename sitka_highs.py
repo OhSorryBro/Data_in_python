@@ -26,8 +26,9 @@ print(header_row)
 
 plt.style.use('seaborn-v0_8')
 fig, ax = plt.subplots()
-ax.plot(dates, highs, color='red')
-ax.plot(dates, lows, color='blue')
+ax.plot(dates, highs, color='red', alpha= .5)
+ax.plot(dates, lows, color='blue', alpha= .5)
+ax.fill_between(dates, highs, lows, facecolor= 'blue', alpha= .1)
 
 ax.set_title("Highest and lowest day temperature - 2021", fontsize=24)
 ax.set_xlabel('', fontsize=16)
