@@ -1,5 +1,5 @@
 import matplotlib.pyplot as plt
-from random_walk import RandomWalk
+from Python_basics.random_walk import RandomWalk
 while True:
     rw = RandomWalk(50_000)
     rw.fill_walk()

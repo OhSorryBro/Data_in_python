@@ -1,4 +1,4 @@
-from die import Die
+from Python_basics.die import Die
 import plotly.express as px
 
 die = Die()
